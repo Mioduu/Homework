@@ -1,0 +1,155 @@
+/* Reset marginesow itp, podstawowe style */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: var(--bg-color);
+}
+
+:root {
+    /* Kolory */
+    --bg-color: rgb(245, 245, 245);
+    --button-bg: black;
+    --button-color: white;
+    --button-hover-border: rgb(177, 255, 61);
+    --text-color: #000;
+
+    /* Marginesy i Odstepy */
+    --spacing-small: 8px;
+    --spacing-medium: 20px;
+    --spacing-large: 30px;
+
+    /* Fonty i rozmiary */
+    --font-size-title: 30px;
+    --font-size-text: 25px;
+
+    /* Border radius */
+    --border-radius: 12px;
+
+    /* Rozmiary przyciskow */
+    --button-width: 150px;
+    --button-height: 40px;
+}
+
+.hidden {
+    display: none;
+}
+
+.centered {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: var(--spacing-large);
+}
+
+/* Przyciski */
+button {
+    background-color: var(--button-bg);
+    color: var(--button-color);
+    border: 3px solid var(--button-bg);
+    border-radius: var(--border-radius);
+    margin-top: var(--spacing-medium);
+    width: var(--button-width);
+    height: var(--button-height);
+    cursor: pointer;
+    transition: border-color 0.3s ease;
+}
+
+button:hover {
+    border-color: var(--button-hover-border);
+}
+
+
+#title {
+    margin-right: 5px;
+}
+
+/* Przykladowy tekst */
+#exampleText {
+    display: inline-block;
+    margin-top: var(--spacing-large);
+}
+
+/* Vertical Align */
+.verticalAlign {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: var(--spacing-large);
+    gap: var(--spacing-small);
+    justify-content: center;
+}
+
+#verticalAlignTitle {
+    margin-top: var(--spacing-large);
+    font-size: var(--font-size-title);
+}
+
+/* Menu formatowania */
+.formatMenu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Kolorowy tekst */
+.colorTextDiv {
+    margin-top: var(--spacing-medium);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.colorTextDiv p {
+    font-size: var(--font-size-title);
+    color: var(--text-color);
+    text-align: center;
+    margin: 0;
+}
+
+.colorTextDiv button {
+    margin-top: var(--spacing-medium);
+    margin-left: 22px;
+}
+
+#textBorder {
+    margin-top: var(--spacing-large);
+    border: 1px solid #ccc;
+    width: 1000px;
+    height: 300px;
+}
+
+.textAlignDiv {
+    text-align: center;
+    margin-top: var(--spacing-large);
+}
+
+#textAlignTitle {
+    margin-top: var(--spacing-small);
+    font-size: var(--font-size-title);
+}
+
+#exampleTextAlign {
+    border: 1px solid #ccc;
+    border-radius: var(--border-radius);
+    margin-top: var(--spacing-medium);
+    font-size: var(--font-size-text);
+}
+
+#decorationsTitle {
+    margin-top: var(--spacing-small);
+    font-size: var(--font-size-title);
+}
+
+.decorationsDiv {
+    text-align: center;
+    margin-top: var(--spacing-large);
+}
+
+#exampleDecorationText {
+    margin-top: var(--spacing-medium);
+    font-size: var(--font-size-text);
+}

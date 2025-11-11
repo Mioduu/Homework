@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formatowanie</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="centered">
+        <h1 id="title">Przykłady formatowania:</h1>
+    
+        <button id="menuShow">Menu formatowania</button>
+        <div id="hiddenMenu" class="hidden">
+            <div class="colorTextDiv">
+            <p id="coloredText">Kolorowy tekst</p>
+            <button id="colorChangeBtn">Zmień kolor tekstu</button>
+            </div>
+            <div class="textAlignDiv">
+                <p id="textAlignTitle">Text Align</p>
+                <p id="exampleTextAlign">Tekst do wyrównania poziomo</p>
+                <button id="center">Center</button>
+                <button id="left">Left</button>
+                <button id="right">Right</button>
+                <button id="justify">Justify</button>
+                <button id="end">End</button>
+                <button id="start">Start</button>
+            </div>
+            <p id="verticalAlignTitle">Vertical Align</p>
+            <div class="verticalAlign">
+                <button id="baseline">Baseline</button>
+                <button id="text-top">Text Top</button>
+                <button id="text-bottom">Text Bottom</button>
+                <button id="sub">Sub</button>
+                <button id="super">Super</button>
+            </div>
+            <div style="display: flex; height: 100%; width: 100%; justify-content: center; margin-top: 30px;">
+                <div style="border: 1px solid #ccc; padding: 10px;">
+                    <span id="exampleText" style="display: inline-block; background: lightblue; padding: 5px;">
+                        Tekst do wyrównania pionowo
+                    </span>
+                    <span style="display: inline-block; width: 20px; height: 20px; background: gray;"></span>
+                </div>
+            </div>
+            <div class="decorationsDiv">
+                <p id="decorationsTitle">Dekoratory</p>
+                <p id="exampleDecorationText">Tekst do udekorowania</p>
+                <div class="lineMenu">
+                    <button>Line</button>
+                    <button></button>
+                </div>
+            </div>
+        </div> 
+    </div>
+    <script type="module" src="main.js"></script>
+</body>
+</html>
