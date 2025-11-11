@@ -8,5 +8,7 @@ export const elements = {
     exampleText: document.getElementById("exampleText"),
     hiddenMenu: document.getElementById("hiddenMenu"),
     textAlignDiv: document.querySelectorAll(".textAlignDiv button"),
-    exampleTextAlign: document.getElementById("exampleTextAlign")
+    exampleTextAlign: document.getElementById("exampleTextAlign"),
+    decorationButtons: document.querySelectorAll(".lineMenu button"),
+    exampleDecorationText: document.getElementById("exampleDecorationText")
 }
